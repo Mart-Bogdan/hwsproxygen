@@ -150,8 +150,6 @@
     </Compile>
     <Content Include="App.ico" />
     <EmbeddedResource Include="Base64.hs" />
-    <EmbeddedResource Include="Browser.hs" />
-    <EmbeddedResource Include="HTTP.hs" />
     <EmbeddedResource Include="MD5.lhs" />
     <EmbeddedResource Include="SoapHttpClientProtocol.hs" />
     <EmbeddedResource Include="Zord64_HARD.lhs" />

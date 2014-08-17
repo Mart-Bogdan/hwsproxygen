@@ -12,10 +12,10 @@ module SoapHttpClientProtocol (
 import Network.URI
 import Data.Maybe (fromMaybe)
 import System.IO
-import HTTP
-import Browser
+import Network.HTTP
+import Network.Browser
 import Network (withSocketsDo)
-import Char
+import Data.Char
 
 type Parameter = (String,String) -- name and value
 
@@ -103,6 +103,17 @@ buildNodeValue restXml nodeName accum
 	| (take (length xmlElement) restXml) == xmlElement = (reverse accum, drop (length xmlElement) restXml)
 	| otherwise = buildNodeValue (tail restXml) nodeName ((head restXml):accum)
 	where xmlElement = xmlTagEnd nodeName
+
+buildSOAPRequest uri action content =
+    Request { rqURI=uri
+            , rqBody=content
+            , rqHeaders=[ Header HdrContentType "text/xml; charset=utf-8"
+                        , Header HdrContentLength (show (length content))
+                        , Header HdrUserAgent libUA
+                        , Header (HdrCustom "SOAPAction") action
+                        ]
+            , rqMethod=POST
+            }
 
 -------------------------------------
 -- Helper text manipulation functions

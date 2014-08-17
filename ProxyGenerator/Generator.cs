@@ -30,10 +30,8 @@ namespace HWSProxyGen {
 			sbuilder.Append("\n");
 			CreateSpecificModuleBody(model, outputPath, writer, sbuilder);
 			GenerateSupportFile(outputPath, "SoapHttpClientProtocol.hs");
-			GenerateSupportFile(outputPath, "HTTP.hs");
 			GenerateSupportFile(outputPath, "MD5.lhs");
 			GenerateSupportFile(outputPath, "Zord64_HARD.lhs");
-			GenerateSupportFile(outputPath, "Browser.hs");
 			GenerateSupportFile(outputPath, "Base64.hs");
 		}
 
