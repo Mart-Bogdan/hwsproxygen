@@ -1,24 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyGenerator", "ProxyGenerator\ProxyGenerator.csproj", "{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}"
-	ProjectSection(ProjectDependencies) = postProject
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E0B8D99-A8ED-41B7-BE21-0E1327E1DC15}"
+	ProjectSection(SolutionItems) = preProject
+		WebServicesSamples.txt = WebServicesSamples.txt
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Debug.ActiveCfg = Debug|.NET
-		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Debug.Build.0 = Debug|.NET
-		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Release.ActiveCfg = Release|.NET
-		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BA11B1C-94ED-4B6E-B6E7-0B0B8A721651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionItems) = postSolution
-		WebServicesSamples.txt = WebServicesSamples.txt
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
